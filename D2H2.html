@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-assets-item src="scene.gltf" id="scene"></a-assets-item>
+            </a-assets>
+            <a-entity gltf-model="#scene"></a-entity>
+            <a-entity position="0 0 12">
+                <a-camera></a-camera>
+            </a-entity>
+            <a-box color="blue" width="0.2" depth="0.1" height="0.2" position="-4 3 8" animation__drive="dur:5000; easing: linear; from:-4 3 8; to: 4 3 8; loop: -1; property: position"></a-box>
+            <a-box color="yellow" width=".5" depth=".5" height="1.2" position="9 0 -2" animation__drive="dur:5000; easing: linear; from:9 1 -2; to: 9 4 -2; loop: -1; property: position"></a-box>
+        </a-scene>
+    </body>
+</html>
